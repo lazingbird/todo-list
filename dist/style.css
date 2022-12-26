@@ -1,0 +1,53 @@
+/* basic CSS reset */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* general styling */
+
+#content {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 0.7fr 10fr 0.7fr;
+}
+
+/* header section styling */
+
+header {
+  display: flex;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+#logo {
+  font-size: 2rem;
+  padding-left: 20px;
+}
+
+/* main section content */
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+#projectsDisplay {
+  background-color: whitesmoke;
+}
+
+/* footer section content */
+
+footer {
+  background-color: black;
+}
