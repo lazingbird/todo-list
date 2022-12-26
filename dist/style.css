@@ -1,3 +1,8 @@
+/* root */
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 /* basic CSS reset */
 
 body,
@@ -43,7 +48,73 @@ main {
 }
 
 #projectsDisplay {
+  display: flex;
   background-color: whitesmoke;
+}
+
+#navContainer {
+  width: 100%;
+}
+#navList {
+  list-style: none;
+  padding: 20px 35px;
+}
+
+.navItem {
+  display: flex;
+  width: 100%;
+  background-color: rgb(233, 232, 232);
+  border-radius: 0px 8px 8px 0px;
+  border-left: 3px lightgray solid;
+  transition: 0.15s;
+}
+
+.navItem:hover {
+  background-color: lightgray;
+  border-left: 3px black solid;
+}
+
+.navItem span {
+  padding: 10px;
+}
+
+.navItem button {
+  margin: 0;
+  width: 100%;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+}
+
+#tasksDisplay {
+  padding: 30px 50px;
+}
+
+#tasksDisplayTitle {
+  font-weight: 700;
+}
+
+#addNewTaskButton {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
+  align-items: center;
+  gap: 5px;
+}
+
+#addNewTaskButton p {
+  font-size: 1rem;
+}
+
+#addNewTaskButton:hover {
+  background-color: rgb(233, 232, 232);
 }
 
 /* footer section content */
